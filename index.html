@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 1</title>
+</head>
+<body>
+  <form>
+    <label>Nombre de cliques : </label>
+    <input type="text" id="click" />
+    <button type="button" name="button" id="countdown">Compte les cliques !</button>
+  </form>
+  <script>
+  var nbClick = 1;
+  $('#click').val(0);
+  $('#countdown').click(function(){
+    $('#click').val(nbClick ++);
+  });
+  </script>
+</body>
+</html>
